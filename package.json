@@ -1,5 +1,5 @@
 {
-  "name": "gracious",
+  "name": "rick-and-morty",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,8 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@chakra-ui/core": "^0.8.0",
+    "@emotion/core": "^10.0.28",
+    "@emotion/styled": "^10.0.27",
+    "emotion-theming": "^10.0.27",
+    "lodash.isequal": "^4.5.0",
+    "lodash.omit": "^4.5.0",
     "next": "9.4.4",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "^16.13.1",
+    "recoil": "^0.0.10"
   }
 }
