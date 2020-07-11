@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "paths": {
+        "@components/*": ["components/*"],
+        "@contexts/*": ["contexts/*"],
+        "@contexts": ["contexts"],
+        "@theme": ["theme"],
+        "@api/*": ["api/*"],
+        "@helpers/*": ["helpers/*"],
+        "@helpers": ["helpers"],
+        "@constants": ["helpers/constants"],
+        "@state/*": ["state/*"],
+        "@public/*": ["public/*"]
+      }
+    }
+}
