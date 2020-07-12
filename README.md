@@ -4,7 +4,7 @@
     <br/>
     <img src="./public/readme.png" alt="rick and morty" />
     <br />
-    react-use
+    Rick and morty characters explorer
     <br />
     <br />
     <br />
