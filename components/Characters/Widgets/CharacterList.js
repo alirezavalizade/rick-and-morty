@@ -9,6 +9,7 @@ import * as selectors from '@state/selectors';
 
 import { SimpleGrid } from '@chakra-ui/core';
 import Character from './Character';
+import NoResultFound from './NoResultFound';
 
 const CharacterList = () => {
 	const data = useRecoilValue(selectors.characters);
@@ -21,6 +22,10 @@ const CharacterList = () => {
 		}
 		if (episodeId) {
 			characters = filterCharactersByEpisodeId(characters, episodeId);
+		}
+
+		if (!characters.length) {
+			return <NoResultFound />;
 		}
 
 		return (
