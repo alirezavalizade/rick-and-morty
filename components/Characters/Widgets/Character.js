@@ -2,7 +2,7 @@ import { getVariantColorByStatus } from '@helpers';
 
 import { Box, Image, Text, Badge, AspectRatioBox } from '@chakra-ui/core';
 
-const Character = ({ data }) => {
+const Character = ({ data, onLoadImg, isScrolling }) => {
 	return (
 		<Box 
 			borderWidth="5px" 
@@ -12,10 +12,11 @@ const Character = ({ data }) => {
 			backgroundColor="haiti"
 		>
 			<AspectRatioBox ratio={1}>
-				<Image 
+				<Image
 					src={data.image}
 					w="100%"
 					loading="lazy"
+					onLoad={isScrolling ? undefined : onLoadImg}
 				/>
 			</AspectRatioBox>
 			<Box padding={3}>

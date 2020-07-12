@@ -4,10 +4,12 @@
 import { filterCharactersByLocationId, filterCharactersByEpisodeId } from '@helpers';
 
 import { useRecoilValue } from 'recoil';
-import { useMemo } from 'react';
 import * as selectors from '@state/selectors';
+import { useMemo } from 'react';
 
 import { SimpleGrid } from '@chakra-ui/core';
+import { VirtualListGrid } from '@components/App';
+
 import Character from './Character';
 import NoResultFound from './NoResultFound';
 
@@ -29,13 +31,27 @@ const CharacterList = () => {
 		}
 
 		return (
-			<SimpleGrid minChildWidth="250px" spacing="16px">
-				{characters.map(item => {
+			<VirtualListGrid
+				data={characters}
+				renderRow={({ data: rowData, measure, isScrolling }) => {
 					return (
-						<Character key={item.id} data={item} />
+						<SimpleGrid 
+							minChildWidth="250px" 
+							spacing="16px"
+							marginBottom="16px"
+						>
+							{rowData.map(item => (
+								<Character 
+									key={item.id}
+									data={item} 
+									isScrolling={isScrolling}
+									onLoadImg={measure}
+								/>
+							))}
+						</SimpleGrid>
 					);
-				})}
-			</SimpleGrid>
+				}}
+			/>
 		);
 	}, [data, locationId, episodeId]);
 };
