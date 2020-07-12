@@ -2,7 +2,7 @@
   <h1>
     <br/>
     <br/>
-    <img src="./public.readme.png" alt="rick and morty" />
+    <img src="./public/readme.png" alt="rick and morty" />
     <br />
     react-use
     <br />
