@@ -14,7 +14,6 @@
     "@chakra-ui/core": "^0.8.0",
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
-    "babel-eslint": "^10.1.0",
     "emotion-theming": "^10.0.27",
     "lodash.chunk": "^4.2.0",
     "lodash.debounce": "^4.0.8",
@@ -29,6 +28,7 @@
   "devDependencies": {
     "@svgr/webpack": "^5.4.0",
     "eslint": "^7.4.0",
+    "babel-eslint": "^10.1.0",
     "eslint-config-airbnb": "^18.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.22.0",

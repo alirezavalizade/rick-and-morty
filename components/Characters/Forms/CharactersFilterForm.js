@@ -5,7 +5,7 @@ import { useRecoilValue, useRecoilState } from 'recoil';
 import * as selectors from '@state/selectors';
 import * as atoms from '@state/atoms';
 
-import { useEffect, useState, useCallback, Fragment, useMemo } from 'react';
+import { useEffect, useState, useCallback, useMemo } from 'react';
 
 import { Input, Select, RadioGroup } from '@components/ui';
 
