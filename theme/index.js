@@ -17,4 +17,9 @@ export const globalStyles = css`
         color: #FFF;
         background-image: url("${require('@public/vectors/background.js').default}");
     }
+
+    .ReactVirtualized__Masonry, 
+    .ReactVirtualized__Grid {
+        outline: 0 !important;
+    }
 `;
