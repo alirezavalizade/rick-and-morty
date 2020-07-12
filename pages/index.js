@@ -1,4 +1,4 @@
-import { Suspense, Fragment } from 'react';
+import { Suspense } from 'react';
 import { Container } from '@components/ui';
 import {
   CharacterList,

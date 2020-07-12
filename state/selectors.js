@@ -16,7 +16,7 @@ export const characters = selector({
   get: async ({ get }) => {
     // https://github.com/facebookexperimental/Recoil/issues/12 :(
     // https://rickandmortyapi.com/documentation/#filter-characters
-    const filters = get(charactersFilterFormState);
+    const filters = get(atoms.charactersFilterFormState);
     const omittedFilters = omit(filters, 'locationId', 'episodeId');
     if (isEqual(omittedFilters, cachedFilterFormState)) {
       return cachedCharacters;

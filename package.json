@@ -8,7 +8,7 @@
     "start": "next start",
     "export": "next export",
     "deploy": "yarn build && yarn export",
-    "lint-fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx"
+    "lint-fix": "eslint --fix . --ext .js"
   },
   "dependencies": {
     "@chakra-ui/core": "^0.8.0",

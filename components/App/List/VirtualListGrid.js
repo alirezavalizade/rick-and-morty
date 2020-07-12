@@ -21,10 +21,10 @@ const VirtualListGrid = ({
   renderRow,
   minGridWidth = 250
 }) => {
+  const { width } = useWindowSize();
   const [data, setData] = useState(() => {
     return getDataBasedOnGridSize(width, data, minGridWidth);
   });
-  const { width } = useWindowSize();
 
   const list = useRef(null);
   const [cache] = useState(() => {

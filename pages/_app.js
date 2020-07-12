@@ -2,7 +2,6 @@ import 'react-virtualized/styles.css';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 
-import { Fragment } from 'react';
 import { Providers } from '@contexts';
 
 const LayoutsWrapper = dynamic(

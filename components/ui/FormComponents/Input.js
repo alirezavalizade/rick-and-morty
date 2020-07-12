@@ -7,7 +7,7 @@ const Input = ({ name, label, onChange, defaultValue, ...rest }) => {
 
   useEffect(() => {
     if (onChange) {
-      return onChange({ [name]: value });
+      onChange({ [name]: value });
     }
   }, [name, value, onChange]);
 
@@ -26,7 +26,7 @@ const Input = ({ name, label, onChange, defaultValue, ...rest }) => {
         />
       </FormControl>
     );
-  }, [value, name, label]);
+  }, [value, name, label, rest]);
 };
 
 export default Input;
