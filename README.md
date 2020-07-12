@@ -16,7 +16,7 @@
      <br />
      <br />
         <a href="https://app.netlify.com/sites/practical-swanson-a56b9a/deploys">
-            <img src="https://api.netlify.com/api/v1/badgesf6491cc1-e047-4835-9a08-9f67c6a90f9a/deploy-status" alt="Netlify Status" />
+            <img src="https://api.netlify.com/api/v1/badges/f6491cc1-e047-4835-9a08-9f67c6a90f9a/deploy-status" alt="Netlify Status" />
       </a>
   </sup>
   <br />
