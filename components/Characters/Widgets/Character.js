@@ -13,8 +13,9 @@ const Character = ({ data }) => {
 		>
 			<AspectRatioBox ratio={1}>
 				<Image 
-					src={data.image} 
+					src={data.image}
 					w="100%"
+					loading="lazy"
 				/>
 			</AspectRatioBox>
 			<Box padding={3}>
