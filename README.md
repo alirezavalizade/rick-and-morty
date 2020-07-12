@@ -30,3 +30,13 @@
   <br />
   <br />
 </div>
+
+
+
+### Used libraries:
+- [`react`](https://github.com/facebook/react)
+- [`next`](https://github.com/vercel/next.js/)
+- [`recoil`](https://github.com/facebookexperimental/Recoil)
+- [`react-virtualized`](https://github.com/bvaughn/react-virtualized)
+- [`emotion`](https://github.com/emotion-js/emotion) 
+- [`chakra-ui`](https://github.com/chakra-ui/chakra-ui)
