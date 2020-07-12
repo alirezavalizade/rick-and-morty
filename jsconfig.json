@@ -5,6 +5,7 @@
         "@components/*": ["components/*"],
         "@contexts/*": ["contexts/*"],
         "@contexts": ["contexts"],
+        "@hooks": ["hooks"],
         "@theme": ["theme"],
         "@api/*": ["api/*"],
         "@helpers/*": ["helpers/*"],
